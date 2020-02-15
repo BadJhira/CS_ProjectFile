@@ -1,4 +1,4 @@
-package CS_202.W6.Recursion;
+package CS_202.W6.InClass_Recursion;
 
 public class Parentheses {
     public static void main(String[] args) {
