@@ -1,5 +1,5 @@
 package CS_202.W6.InClass_Recursion;
-
+// Doug Gilchrist 2/12/20 [Recursion - Stars]
 public class Stars {
     public static void main(String[] args) {
         int num = 5;

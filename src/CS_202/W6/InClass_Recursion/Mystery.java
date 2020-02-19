@@ -2,15 +2,15 @@ package CS_202.W6.InClass_Recursion;
 
 public class Mystery {
     public static void main(String[] args) {
-        mystery(7);
+        mystery(10);
         System.out.println();
-        mystery(38);
+        mystery(101);
         System.out.println();
-        mystery(749);
+        mystery(849);
         System.out.println();
-        mystery(-6842);
+        mystery(-1001);
         System.out.println();
-        mystery(954023);
+        mystery(800203);
         System.out.println();
     }
 

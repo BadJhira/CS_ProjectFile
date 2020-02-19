@@ -1,5 +1,5 @@
 package CS_202.W6.InClass_Recursion;
-
+// Doug Gilchrist 2/12/20 [Recursion - Factorial]
 public class Factorial {
     public static void main(String[] args) {
         for (int i = 10; i > 0; i--) {
