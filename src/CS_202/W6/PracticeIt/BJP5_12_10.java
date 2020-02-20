@@ -6,7 +6,7 @@ public class BJP5_12_10 {
     }
 
     public static int digitMatch(int x, int y) {
-        // TODO: else if and else statements feel redundant; fix perhaps?
+        // else if and else statements feel redundant; fix perhaps?
         if (x < 0 || y < 0)
             throw new IllegalArgumentException();
         else if (x / 10 == 0 || y / 10 == 0) {

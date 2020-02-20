@@ -18,9 +18,28 @@ public class Maps {
 
         System.out.println(map);
         System.out.println("Keyset: " + map.keySet());
+        printMapItems(map);
+        System.out.println();
 
-        for (int key: map.keySet()) {
-            System.out.println("Key: " + key + ", " + "String: " + map.get(key));
+        map.put(6, "random");
+        map.put(3, "monster");
+
+        System.out.println(map);
+        System.out.println("Keyset: " + map.keySet());
+        printMapItems(map);
+    }
+
+    // <Type> parameters inherit from the Object class by default.
+    public static <Type1, Type2> void printMapItems(Map<Type1, Type2> map) {
+//        Iterator<Type1> iterator = map.keySet().iterator();
+//        while (iterator.hasNext()) {
+//            Type1 key = iterator.next();
+//            Type2 item = map.get(key);
+//            System.out.println("Key: " + key + ", Item: " + item);
+//        }
+        for (Type1 key : map.keySet()) {
+            Type2 item = map.get(key);
+            System.out.println("Key: " + key + ", Item: " + item);
         }
     }
 }

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Zylabs_NamePermutations {
 
-    // TODO: Write method to create and output all permutations of the list of names.
+    // Write method to create and output all permutations of the list of names.
     public static void allPermutations(ArrayList<String> permList, ArrayList<String> nameList) {
         if (nameList.isEmpty()) {
             for (int i = 0; i < permList.size(); i++) {
@@ -31,7 +31,7 @@ public class Zylabs_NamePermutations {
         ArrayList<String> permList = new ArrayList<>();
         String name;
 
-        // TODO: Read in a list of names; stop when -1 is read. Then call recursive method.
+        // Read in a list of names; stop when -1 is read. Then call recursive method.
         name = scnr.next();
         while (!name.equals("-1")) {
             nameList.add(name);

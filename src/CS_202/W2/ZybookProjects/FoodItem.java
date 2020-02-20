@@ -6,12 +6,12 @@ public class FoodItem {
     private double carbs;
     private double protein;
 
-    // TODO: Define default constructor
+    // Define default constructor
     public FoodItem() {
         this("None", 0.0, 0.0, 0.0);
     }
 
-    // TODO: Define second constructor with arguments to initialize
+    // Define second constructor with arguments to initialize
     //       private fields (name, fat, carbs, protein)
     public FoodItem(String name, double fat, double carbs, double protein) {
         this.name = name;

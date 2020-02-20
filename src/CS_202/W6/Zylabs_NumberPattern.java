@@ -3,7 +3,6 @@ package CS_202.W6;
 import java.util.*;
 
 public class Zylabs_NumberPattern {
-    // TODO: Write recursive printNumPattern() method
     public static void printNumPattern(int base, int sub) {
         if (base <= 0)
             System.out.print(base);

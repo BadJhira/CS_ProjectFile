@@ -17,38 +17,43 @@ public class Linked_List {
         // Iterator<String> iterator = linkedList.iterator();
         // Iterator MUST be declared after the list is manipulated / constructed.
         // This implies to me that iterators are best declared within methods
-        // that pass in a list, so the iterators is always pointing to the correct list.
+        // that pass in a list, so the iterator is always pointing to the correct list.
 
         System.out.println(linkedList + "\n");
-        readStrings(linkedList);
+        printItems(linkedList);
+
         System.out.println();
-        removeFirstStrings(linkedList);
+        removeFirstItems(linkedList);
     }
 
-    public static void readStrings(LinkedList<String> list) {
-        Iterator<String> iterator = list.iterator();
+    // Building this method as generic so it could theoretically pass in any type of linked list.
+    // <Type> parameters inherit from the Object class by default.
+    public static <Type> void printItems(LinkedList<Type> list) {
+        Iterator<Type> iterator = list.iterator();
+        int n = 0;
 
-        System.out.println("Printing strings: ");
+        System.out.println("Printing items: ");
         while (iterator.hasNext()) {
-            String string = iterator.next();
-            System.out.println("String: " + string);
+            Type item = iterator.next();
+            System.out.println("Item " + n + ": " + item);
+            n++;
         }
 
         System.out.println("Done.");
     }
 
-    public static void removeFirstStrings(LinkedList<String> list) {
-        Iterator<String> iterator = list.iterator();
+    public static <Type> void removeFirstItems(LinkedList<Type> list) {
+        Iterator<Type> iterator = list.iterator();
 
-        System.out.println("Removing strings: ");
+        System.out.println("Removing items: ");
 //        while (!list.isEmpty()) {
 //            list.remove(0);
 //            System.out.println("Remove first string: " + list);
 //        }
         while (iterator.hasNext()) {
             System.out.println(list);
-            String string = iterator.next();
-            System.out.println("Current word: " + string);
+            Type item = iterator.next();
+            System.out.println("Removing item: " + item);
             iterator.remove();
         }
 

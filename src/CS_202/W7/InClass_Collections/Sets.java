@@ -16,22 +16,25 @@ public class Sets {
 
         System.out.println("Set: " + set + "\n");
 
-        System.out.println("Set:");
-        readStrings(set);
+        System.out.println("=====Set=====");
+        printItems(set);
         System.out.println();
 
         Set<String> treeSet = new TreeSet<>(set);
-        System.out.println("TreeSet: ");
-        readStrings(treeSet);
+        System.out.println("=====TreeSet=====");
+        printItems(treeSet);
     }
 
-    public static void readStrings(Set<String> set) {
-        Iterator<String> iterator = set.iterator();
+    // <Type> parameters inherit from the Object class by default.
+    public static <Type> void printItems(Set<Type> set) {
+        Iterator<Type> iterator = set.iterator();
+        int n = 0;
 
-        System.out.println("Printing strings: ");
+        System.out.println("Printing items: ");
         while (iterator.hasNext()) {
-            String string = iterator.next();
-            System.out.println("String: " + string);
+            Type item = iterator.next();
+            System.out.println("Item " + n + ": " + item);
+            n++;
         }
 
         System.out.println("Done.");
