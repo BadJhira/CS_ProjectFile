@@ -68,8 +68,8 @@ public class ListNodeMain {
 //
 //        list.insert(46, 47);
 //        System.out.println("List: " + list);
-        TestNode list1 = new TestNode(1, new TestNode(3));
-        TestNode list2 = new TestNode(6);
+        ListNode list1 = new ListNode(1, new ListNode(3));
+        ListNode list2 = new ListNode(6);
 
         System.out.println("List 1: " + list1);
         System.out.println("List 2: " + list2 + "\n");
@@ -86,7 +86,7 @@ public class ListNodeMain {
         System.out.println("List 2: " + list2 + "\n");
 
         System.out.println("Add 4 to the middle of List 2: ");
-        list2.setNext(new TestNode(4, list2.next));
+        list2.setNext(new ListNode(4, list2.next));
         System.out.println("List 2: " + list2 + "\n");
 
         System.out.println("List 1 size: " + list1.size());

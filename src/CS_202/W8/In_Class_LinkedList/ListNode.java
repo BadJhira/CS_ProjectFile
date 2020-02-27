@@ -3,7 +3,7 @@ package CS_202.W8.In_Class_LinkedList;
 public class ListNode {
     // properties
     int data;
-    TestNode next;
+    ListNode next;
 
     // constructors
     public ListNode(int data) {
@@ -11,7 +11,7 @@ public class ListNode {
         setNext(null);
     }
 
-    public ListNode(int data, TestNode next) {
+    public ListNode(int data, ListNode next) {
         setData(data);
         setNext(next);
     }
@@ -19,11 +19,11 @@ public class ListNode {
     // mutators
     public void setData(int data) { this.data = data; }
 
-    public void setNext(TestNode next) { this.next = next; }
+    public void setNext(ListNode next) { this.next = next; }
 
     public void addFront(int data) {
         // Set the next node as a new node with this node's current data & pointer.
-        setNext(new TestNode(this.data, next));
+        setNext(new ListNode(this.data, next));
         // Set this node's data to the new data.
         setData(data);
     }
@@ -34,7 +34,7 @@ public class ListNode {
             next.addBack(data);
         else
             // If the next node is null, build a new node and point to it.
-            setNext(new TestNode(data));
+            setNext(new ListNode(data));
     }
 
 //
