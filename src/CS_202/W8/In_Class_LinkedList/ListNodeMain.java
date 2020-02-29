@@ -1,5 +1,5 @@
 package CS_202.W8.In_Class_LinkedList;
-
+// Doug Gilchrist 2/24/20 [Linked Lists]
 public class ListNodeMain {
     public static void main(String[] args) {
 //        ListNode list = new ListNode();
